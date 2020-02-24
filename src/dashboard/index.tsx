@@ -1,13 +1,12 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import RecentList from './RecentList';
+import PokemonData from './PokemonData';
 
 const Dashboard = (): JSX.Element => {
-    const { id } = useParams();
-
     return (
         <React.Fragment>
-            <h3>It is working!</h3>
-            {id && <span>Id: {id}</span>}
+            <PokemonData />
+            <RecentList />
         </React.Fragment>
     );
 };
